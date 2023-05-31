@@ -13,9 +13,9 @@
   <xacro:property name="height" value="0.20" /> <!-- base link height -->
 
   <!-- Wheels -->
-  <property name="wheel_radius" value="0.076" /> 
-  <property name="wheel_height" value="0.02" />
-  <property name="wheel_mass" value="2.50" /> <!-- in kg-->
+  <xacro:property name="wheel_radius" value="0.076" /> 
+  <xacro:property name="wheel_height" value="0.02" />
+  <xacro:property name="wheel_mass" value="2.50" /> <!-- in kg-->
     
   <link name="base_footprint"/>
 
@@ -221,18 +221,18 @@
 
   <!-- caster wheel radius and height -->
   <!-- caster wheel mass -->
-  <property name="caster_f_height" value="0.00" /> 
-  <property name="caster_f_radius" value="0.025" /> 
-  <property name="caster_f_mass" value="1.0" /> <!-- in kg-->
+  <xacro:property name="caster_f_height" value="0.00" /> 
+  <xacro:property name="caster_f_radius" value="0.025" /> 
+  <xacro:property name="caster_f_mass" value="1.0" /> <!-- in kg-->
 
 
-  <property name="caster_height" value="-0.029" /> 
+  <xacro:property name="caster_height" value="-0.029" /> 
 
   <!-- caster wheel radius and height -->
   <!-- caster wheel mass -->
-  <property name="caster_b_height" value="0.00" /> 
-  <property name="caster_b_radius" value="0.025" /> 
-  <property name="caster_b_mass" value="1.0" /> <!-- in kg-->
+  <xacro:property name="caster_b_height" value="0.00" /> 
+  <xacro:property name="caster_b_radius" value="0.025" /> 
+  <xacro:property name="caster_b_mass" value="1.0" /> <!-- in kg-->
 
 <!--Caster front  -->
 

@@ -182,7 +182,8 @@ class Switching_():
         print("shape idxs : {} ".format(idxs.shape))
 
         static_obs_pixel[:, idxs] = None
-        static_obs_pixel_cut = np.delete(static_obs_pixel, idxs, axis=1)
+        if(list(idxs)):
+        	static_obs_pixel_cut = np.delete(static_obs_pixel, idxs, axis=1)
 
         static_obs_pixel_t = static_obs_pixel_cut.T
 
@@ -192,10 +193,10 @@ class Switching_():
         print("shape static_obs_pixel_sort : {}, uidx : {} ".format(static_obs_pixel_sort.shape,uidx.shape))
 
         idx_all = np.linspace(0, static_obs_pixel_sort[:,3].shape[0]-1, static_obs_pixel_sort[:,3].shape[0])
-
-        uidx_del = np.delete(idx_all, uidx.T, axis=0) 
-
-        static_obs_pixel_uidx = np.delete(static_obs_pixel_sort, uidx_del.T, axis=0)
+        if(list(uidx.T)):
+        	uidx_del = np.delete(idx_all, uidx.T, axis=0).astype(int)
+        if(list(static_obs_pixel_sort)):
+        	static_obs_pixel_uidx = np.delete(static_obs_pixel_sort, uidx_del.T, axis=0)
 
         print("shape static_obs_pixel_sort : {}, static_obs_pixel_uidx : {} ".format(static_obs_pixel_sort.shape,static_obs_pixel_uidx.shape))
 

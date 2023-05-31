@@ -209,8 +209,8 @@ class StageWorld():
         try:
             resp = self.set_state( state_msg )
 
-        except rospy.ServiceException, e:
-            print "Service call failed: %s" % e
+        except rospy.ServiceException.e:
+            print("Service call failed: %s" % e)
 
         rospy.sleep(1.)
 
