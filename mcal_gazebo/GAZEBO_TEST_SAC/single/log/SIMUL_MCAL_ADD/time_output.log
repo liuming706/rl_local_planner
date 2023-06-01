@@ -62,3 +62,13 @@
 2023-05-31 17:26:19,857 - INFO - start_logging
 2023-05-31 17:27:14,086 - INFO - Env: 0, Episode: 1, time :39.721000000, start_time: 116.35000000, end_time: 155.756000000
 2023-05-31 17:28:10,432 - INFO - start_logging
+2023-06-01 23:08:24,535 - INFO - start_logging
+2023-06-01 23:09:11,208 - INFO - Env: 0, Episode: 1, time :34.135000000, start_time: 347.507000000, end_time: 381.642000000
+2023-06-01 23:11:36,497 - INFO - start_logging
+2023-06-01 23:12:04,096 - INFO - Env: 0, Episode: 1, time :17.223000000, start_time: 114.946000000, end_time: 132.169000000
+2023-06-01 23:14:07,872 - INFO - start_logging
+2023-06-01 23:14:53,906 - INFO - Env: 0, Episode: 1, time :34.91000000, start_time: 115.965000000, end_time: 150.56000000
+2023-06-01 23:17:25,222 - INFO - start_logging
+2023-06-01 23:18:16,017 - INFO - Env: 0, Episode: 1, time :35.253000000, start_time: 197.513000000, end_time: 232.766000000
+2023-06-01 23:20:18,954 - INFO - start_logging
+2023-06-01 23:21:14,162 - INFO - Env: 0, Episode: 1, time :38.964000000, start_time: 155.709000000, end_time: 194.673000000

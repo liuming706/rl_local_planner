@@ -22,3 +22,8 @@
 2023-05-31 17:21:07,054 - INFO - Env: 0, Episode: 1, time :17.607000000, start_time: 1833.928000000, end_time: 1851.535000000
 2023-05-31 17:22:19,504 - INFO - Env: 0, Episode: 1, time :35.332000000, start_time: 1877.866000000, end_time: 1913.198000000
 2023-05-31 17:27:14,086 - INFO - Env: 0, Episode: 1, time :39.721000000, start_time: 116.35000000, end_time: 155.756000000
+2023-06-01 23:09:11,208 - INFO - Env: 0, Episode: 1, time :34.135000000, start_time: 347.507000000, end_time: 381.642000000
+2023-06-01 23:12:04,096 - INFO - Env: 0, Episode: 1, time :17.223000000, start_time: 114.946000000, end_time: 132.169000000
+2023-06-01 23:14:53,906 - INFO - Env: 0, Episode: 1, time :34.91000000, start_time: 115.965000000, end_time: 150.56000000
+2023-06-01 23:18:16,017 - INFO - Env: 0, Episode: 1, time :35.253000000, start_time: 197.513000000, end_time: 232.766000000
+2023-06-01 23:21:14,162 - INFO - Env: 0, Episode: 1, time :38.964000000, start_time: 155.709000000, end_time: 194.673000000

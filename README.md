@@ -112,16 +112,7 @@ roslaunch sp_gazebo scan_merged_sr7e_rl_df_gazebo.launch
 
 ### without Look ahead (mcal)
 
-1. modify import world file of gazebo_test_sac.py 
-
-    ```jsx
-    cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
-    gedit gazebo_test_sac.py
-    ****************************************************
-    from syscon_gazebo_test_amcl_world import StageWorld
-    ```
-
-2. run roslaunch file & runfile 
+1. run roslaunch file & runfile 
 
     ```jsx
     roslaunch gazebo_rl_test sysconbot_rl.launch
@@ -131,38 +122,20 @@ roslaunch sp_gazebo scan_merged_sr7e_rl_df_gazebo.launch
 
 ### with Look ahead (mcal_p)
 
-1. modify import world file of gazebo_test_sac.py 
-
-    ```jsx
-    cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
-    gedit gazebo_test_sac.py
-    ****************************************************
-    from syscon_gazebo_test_amcl_world_LAH import StageWorld
-    ```
-
-2. run roslaunch file & runfile 
+1. run roslaunch file & runfile 
 
     ```jsx
     roslaunch gazebo_rl_test sysconbot_rl_lookahead_2.launch
     cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
-    mpiexec -np 1 python gazebo_test_sac.py
+    mpiexec -np 1 python gazebo_test_sac1.py
     ```
 
 ### with Look ahead & hybrid mode (hybrid mcal_p)
 
-```jsx
-roslaunch gazebo_rl_test hybrid_syscon_navigation.launch
-cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
-mpiexec -np 1 python gazebo_test_sac.py
-```
-
-1. modify import world file of gazebo_test_sac.py 
+1. run launch file
 
     ```jsx
-    cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
-    gedit gazebo_test_sac.py
-    ****************************************************
-    from syscon_gazebo_test_amcl_world_LAH_hybrid import StageWorld
+    roslaunch gazebo_rl_test hybrid_syscon_navigation.launch
     ```
 
 2. run cmd_vel_swich node
@@ -172,12 +145,11 @@ mpiexec -np 1 python gazebo_test_sac.py
     python hybrid_cmd_vel_swich.py
     ```
 
-3. run roslaunch file & runfile 
+3. run runfile 
 
     ```jsx
-    roslaunch gazebo_rl_test hybrid_syscon_navigation.launch
     cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
-    mpiexec -np 1 python gazebo_test_sac.py
+    mpiexec -np 1 python gazebo_test_sac2.py
     ```
 
 ## How to Test (multi-agent)

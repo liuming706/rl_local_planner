@@ -18,11 +18,10 @@ from collections import deque
 from model.utils import soft_update, hard_update
 
 from model.net import QNetwork_1, QNetwork_2, ValueNetwork, GaussianPolicy, DeterministicPolicy
-#from syscon_test_amcl_world import StageWorld
+
+from syscon_gazebo_test_amcl_world import StageWorld
 ###from syscon_gazebo_test_amcl_world_LAH import StageWorld
-###from syscon_gazebo_test_amcl_world import StageWorld
-#from A_syscon_gazebo_test_amcl_world_LAH2 import StageWorld
-from syscon_gazebo_test_amcl_world_LAH_hybrid import StageWorld
+###from syscon_gazebo_test_amcl_world_LAH_hybrid import StageWorld
 from model.sac import SAC
 
 parser = argparse.ArgumentParser(description='PyTorch Soft Actor-Critic Args')
