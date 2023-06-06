@@ -19,8 +19,8 @@ from model.utils import soft_update, hard_update
 
 from model.net import QNetwork_1, QNetwork_2, ValueNetwork, GaussianPolicy, DeterministicPolicy
 #from syscon_test_amcl_world import StageWorld
-
-from syscon_gazebo_test_amcl_world_LAH2_hybrid import StageWorld
+from syscon_gazebo_test_amcl_world import StageWorld
+###from syscon_gazebo_test_amcl_world_LAH2_hybrid import StageWorld
 from model.sac import SAC
 
 parser = argparse.ArgumentParser(description='PyTorch Soft Actor-Critic Args')
@@ -304,7 +304,7 @@ if __name__ == '__main__':
             print('###########################################')
             print('############Loading Policy Model###########')
             print('###########################################')
-            state_dict = torch.load(file_policy)
+            state_dict = torch.load(file_policy,map_location='cpu')
             agent.policy.load_state_dict(state_dict)
         else:
             print('###########################################')
@@ -315,7 +315,7 @@ if __name__ == '__main__':
             print('###########################################')
             print('############Loading critic_1 Model###########')
             print('###########################################')
-            state_dict = torch.load(file_critic_1)
+            state_dict = torch.load(file_critic_1,map_location='cpu')
             agent.critic_1.load_state_dict(state_dict)
             hard_update(agent.critic_1_target, agent.critic_1)
 
@@ -328,7 +328,7 @@ if __name__ == '__main__':
             print('###########################################')
             print('############Loading critic_2 Model###########')
             print('###########################################')
-            state_dict = torch.load(file_critic_2)
+            state_dict = torch.load(file_critic_2,map_location='cpu')
             agent.critic_2.load_state_dict(state_dict)
             hard_update(agent.critic_2_target, agent.critic_2)
         else:

@@ -1,0 +1,8 @@
+2023-06-06 10:50:56,003 - INFO - start_logging
+2023-06-06 10:53:17,132 - INFO - start_logging
+2023-06-06 10:54:10,841 - INFO - start_logging
+2023-06-06 10:55:34,755 - INFO - start_logging
+2023-06-06 10:56:23,386 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 5468, Reward: -528.35, Distance: 00.40, Result: Reach Goal
+2023-06-06 10:57:22,359 - INFO - start_logging
+2023-06-06 10:57:58,604 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 3657, Reward: -377.71, Distance: 04.80, Result: Crashed
+2023-06-06 10:58:09,231 - INFO - start_logging
