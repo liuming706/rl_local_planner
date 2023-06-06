@@ -93,8 +93,9 @@ mpiexec -np 6 python sac_main.py
 
 ---
 
-### 1. Run Gazebo simulator
-
+### 1. Run Gazebo simulator  
+导入机器人urdf文件，仿真两个激光雷达和一个双轮差速里程计，加载进入 gazebo 仿真环境
+使用 ira_laser_tools 工具包将双激光雷达融合为一个360°的激光雷达。
 ```jsx
 #empty world
 roslaunch sp_gazebo scan_merged_sr7e_rl_gazebo.launch
@@ -111,6 +112,21 @@ roslaunch sp_gazebo scan_merged_sr7e_rl_df_gazebo.launch
 ### 2. Run RL navigation
 
 ### without Look ahead (mcal)
+调用 map_server 加载地图,  调用 amcl 进行定位， 调用 move_base 进行导航,  调用 rviz 可视化
+
+**map_server 配置文件:** lsq_map_2.yaml
+
+**amcl 配置文件:** 3amcl_params.yaml
+
+**move_base 配置文件:** 
+carlike/2costmap_common_params_local.yaml
+carlike/2costmap_common_params.yaml
+carlike/2local_costmap_params.yaml
+carlike/2global_costmap_params.yaml
+
+Global Planner: global_planner/GlobalPlanner,  global_planner_params.yaml
+Local Planner: base_local_planner/TrajectoryPlannerROS
+external controller: /fake_cmd  
 
 1. run roslaunch file & runfile 
 
@@ -120,7 +136,25 @@ roslaunch sp_gazebo scan_merged_sr7e_rl_df_gazebo.launch
     mpiexec -np 1 python gazebo_test_sac.py
     ```
 
-### with Look ahead (mcal_p)
+### with Look ahead (mcal_p)  
+
+调用 map_server 加载地图,  调用 amcl 进行定位， 调用 move_base 进行导航,调用 Look_a_head_Node, 调用 rviz 可视化
+
+**map_server 配置文件:** lsq_map_2.yaml
+
+**amcl 配置文件:** 3amcl_params.yaml
+
+**move_base 配置文件:** 
+sr7c_ls_param/costmap_common_params.yaml
+sr7c_ls_param/costmap_common_params.yaml
+sr7c_ls_param/local_costmap_params.yaml
+sr7c_ls_param/global_costmap_params.yaml
+
+Global Planner: global_planner/GlobalPlanner,  global_planner_params.yaml
+Local Planner: base_local_planner/TrajectoryPlannerROS
+external controller: /fake_cmd  
+
+**look a head 配置文件:** lookahead.yaml
 
 1. run roslaunch file & runfile 
 
