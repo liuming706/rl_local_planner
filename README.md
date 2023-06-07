@@ -106,6 +106,8 @@ roslaunch sp_gazebo scan_merged_sr7e_rl_static_4_gazebo.launch
 roslaunch sp_gazebo scan_merged_sr7e_rl_d35m_gazebo.launch
 roslaunch sp_gazebo scan_merged_sr7e_rl_dc_gazebo.launch
 roslaunch sp_gazebo scan_merged_sr7e_rl_df_gazebo.launch
+# for haina
+roslaunch sp_gazebo scan_merged_haina_rl_d35m_gazebo.launch
 
 ```
 
@@ -126,14 +128,20 @@ carlike/2global_costmap_params.yaml
 
 Global Planner: global_planner/GlobalPlanner,  global_planner_params.yaml
 Local Planner: base_local_planner/TrajectoryPlannerROS
-external controller: /fake_cmd  
+external controller: /fake_cmd 
 
 1. run roslaunch file & runfile 
-
+    for sr7e
     ```jsx
     roslaunch gazebo_rl_test sysconbot_rl.launch
     cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
-    mpiexec -np 1 python gazebo_test_sac.py
+    mpiexec -np 1 python gazebo_haina_test_sac.py
+    ```
+    for haina
+    ```jsx
+    roslaunch gazebo_rl_test syshaina_rl.launch
+    cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
+    mpiexec -np 1 python gazebo_haina_test_sac.py
     ```
 
 ### with Look ahead (mcal_p)  

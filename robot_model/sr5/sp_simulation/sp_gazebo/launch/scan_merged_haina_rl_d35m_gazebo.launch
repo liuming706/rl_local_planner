@@ -1,0 +1,59 @@
+<launch>
+  <include file="$(find aubo_haina_moveit_config)/launch/haina_world.launch">
+    <arg name="x_pos" value="8"/>
+    <arg name="y_pos" value="0"/>
+    <arg name="z_pos" value="0"/>
+    <arg name="yaw" value="3.14"/>
+    <arg name="urdf_file" value="$(find xacro)/xacro --inorder '$(find aubo_haina_moveit_config)/urdf/aubo_haina.xacro'"/>
+    <arg name="world_file" value="$(find servingbot_gazebo)/models/lsq_dynamic_25m.world"/>
+    <arg name="publish_joint_state" value="true"/>
+  </include>
+
+    <!-- Laser Sensor Filters before Merging-->
+    <!--include file="$(find sp_driver)/launch/laser_filters.launch.xml"/-->
+    <!-- Laser Mergers -->
+    
+    <arg name="angle_increment" default="0.00436332309619"/>
+    <arg name="time_increment" default="0.0000277777780866"/>
+    <arg name="scan_time" default="0.0399999991059"/>
+    
+    <arg name="range_max" default ="20.0" />
+    <arg name="range_min" default ="0.0" />
+    <arg name="angle_max" default ="3.14" />
+    <arg name="angle_min" default ="-3.14" />	
+
+
+    <node pkg="ira_laser_tools" name="laserscan_merger" type="laserscan_multi_merger" output="screen">
+        <param name="destination_frame" value="base_laser_link"/>
+        <param name="cloud_destination_topic" value="cloud"/>
+        <param name="scan_destination_topic" value="scan"/>
+        <param name="laserscan_topics" value ="/scan_1 /scan_2" /> 
+
+        <param name="angle_increment" value="$(arg angle_increment)"/>
+        <param name="time_increment" value="$(arg time_increment)"/>
+        <param name="scan_time" value="$(arg scan_time)"/>
+        
+        <param name="range_max" value ="$(arg range_max)" />
+        <param name="range_min" value ="$(arg range_min)" />
+        <param name="angle_max" value ="$(arg angle_max)" />
+        <param name="angle_min" value ="$(arg angle_min)" />
+    </node>
+
+    <!--node pkg="ira_laser_tools" name="laserfeature_merger" type="laserscan_multi_merger" output="screen">
+        <param name="destination_frame" value="base_laser_link"/>
+        <param name="cloud_destination_topic" value="cloud_featured"/>
+        <param name="scan_destination_topic" value="reflected"/>
+        <param name="laserscan_topics" value ="/scan_featured_1 /scan_featured_2" /> 
+
+        <param name="angle_increment" value="$(arg angle_increment)"/>
+        <param name="time_increment" value="$(arg time_increment)"/>
+        <param name="scan_time" value="$(arg scan_time)"/>
+        
+        <param name="range_max" value ="$(arg range_max)" />
+        <param name="range_min" value ="$(arg range_min)" />
+        <param name="angle_max" value ="$(arg angle_max)" />
+        <param name="angle_min" value ="$(arg angle_min)" />
+    </node-->
+
+
+</launch>

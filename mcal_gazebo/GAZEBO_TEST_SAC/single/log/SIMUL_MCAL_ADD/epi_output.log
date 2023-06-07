@@ -98,3 +98,7 @@
 2023-06-07 10:24:36,629 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 1849, Reward: -212.59, Distance: 11.08, Result: Crashed
 2023-06-07 10:24:50,682 - INFO - start_logging
 2023-06-07 10:25:37,153 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 5606, Reward: -561.90, Distance: 00.33, Result: Reach Goal
+2023-06-07 14:20:08,921 - INFO - start_logging
+2023-06-07 14:27:26,226 - INFO - start_logging
+2023-06-07 14:33:02,259 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 100002, Reward: -10051.08, Distance: 12.43, Result: Time out
+2023-06-07 14:39:37,799 - INFO - start_logging

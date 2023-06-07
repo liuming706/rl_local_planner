@@ -98,3 +98,7 @@
 2023-06-07 10:24:36,630 - INFO - Env: 0, Episode: 1, time :11.925000000, start_time: 148.789000000, end_time: 160.714000000
 2023-06-07 10:24:50,682 - INFO - start_logging
 2023-06-07 10:25:37,157 - INFO - Env: 0, Episode: 1, time :34.650000000, start_time: 179.272000000, end_time: 213.922000000
+2023-06-07 14:20:08,921 - INFO - start_logging
+2023-06-07 14:27:26,226 - INFO - start_logging
+2023-06-07 14:33:02,259 - INFO - Env: 0, Episode: 1, time :166.201000000, start_time: 115.61000000, end_time: 281.262000000
+2023-06-07 14:39:37,799 - INFO - start_logging
