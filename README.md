@@ -135,7 +135,7 @@ external controller: /fake_cmd
     ```jsx
     roslaunch gazebo_rl_test sysconbot_rl.launch
     cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
-    mpiexec -np 1 python gazebo_haina_test_sac.py
+    mpiexec -np 1 python gazebo_test_sac.py
     ```
     for haina
     ```jsx
