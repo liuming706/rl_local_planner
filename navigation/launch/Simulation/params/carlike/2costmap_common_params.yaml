@@ -2,7 +2,7 @@
 #---standard pioneer footprint---
 #---(in meters)---
 
-footprint: [[-0.350, -0.350], [-0.350, 0.350], [0.300, 0.350], [0.300, -0.350]]
+footprint: [[-0.500, -0.350], [-0.500, 0.350], [0.520, 0.350], [0.520, -0.350]]
 
 transform_tolerance: 0.2
 map_type: costmap

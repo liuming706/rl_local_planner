@@ -149,7 +149,7 @@ class StageWorld():
         print("set_pose")
 
         state_msg = ModelState()
-        state_msg.model_name = 'sr7e'
+        state_msg.model_name = 'aubo_haina'
         state_msg.pose.position.x = x
         state_msg.pose.position.y = y
         state_msg.pose.position.z = 0
