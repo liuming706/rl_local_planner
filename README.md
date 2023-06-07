@@ -131,13 +131,13 @@ Local Planner: base_local_planner/TrajectoryPlannerROS
 external controller: /fake_cmd  
 
 1. run roslaunch file & runfile  
-    for sr7e
+    ***for sr7e***  
     ```jsx
     roslaunch gazebo_rl_test sysconbot_rl.launch
     cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
     mpiexec -np 1 python gazebo_test_sac.py
     ```
-    for haina
+    ***for haina***  
     ```jsx
     roslaunch gazebo_rl_test syshaina_rl.launch
     cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
@@ -165,15 +165,37 @@ external controller: /fake_cmd
 **look a head 配置文件:** lookahead.yaml  
 
 1. run roslaunch file & runfile  
-
+    ***for sr7e***  
     ```jsx
     roslaunch gazebo_rl_test sysconbot_rl_lookahead_2.launch
     cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
     mpiexec -np 1 python gazebo_test_sac1.py
+    ```  
+    ***for haina***  
+    ```jsx
+    roslaunch gazebo_rl_test syshaina_rl_lookahead.launch
+    cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
+    mpiexec -np 1 python gazebo_haina_test_sac1.py
     ```
 
-### with Look ahead & hybrid mode (hybrid mcal_p)
+### with Look ahead & hybrid mode (hybrid mcal_p)  
+**map_server 配置文件:** lsq_map_2.yaml
 
+**amcl 配置文件:** 3amcl_params.yaml
+
+**move_base 配置文件:** 
+sr7c_ls_param/dwa_costmap_common_params.yaml  
+sr7c_ls_param/dwa_costmap_common_params.yaml  
+sr7c_ls_param/dwa_local_costmap_params.yaml  
+sr7c_ls_param/dwa_global_costmap_params.yaml  
+
+Global Planner: global_planner_params.yaml  
+Local Planner: sr7c_ls_param/dwa_local_planner_params.yaml  
+<remap from="cmd_vel" to="dwa_cmd_vel" />
+
+**look a head 配置文件:** lookahead.yaml  
+
+***for sr7e***   
 1. run launch file
 
     ```jsx
@@ -192,6 +214,27 @@ external controller: /fake_cmd
     ```jsx
     cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
     mpiexec -np 1 python gazebo_test_sac2.py
+    ```  
+    
+***for haina***  
+1. run launch file
+
+    ```jsx
+    roslaunch gazebo_rl_test hybrid_syshaina_navigation.launch
+    ```
+
+2. run cmd_vel_swich node
+
+    ```jsx
+    cd ~/catkin_ws/src/rl_local_planner/navigation/script
+    python hybrid_cmd_vel_swich.py
+    ```
+
+3. run runfile 
+
+    ```jsx
+    cd ~/catkin_ws/src/rl_local_planner/mcal_gazebo/GAZEBO_TEST_SAC/single
+    mpiexec -np 1 python gazebo_haina_test_sac2.py
     ```
 
 ## How to Test (multi-agent)
