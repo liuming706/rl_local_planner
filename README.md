@@ -121,16 +121,16 @@ roslaunch sp_gazebo scan_merged_haina_rl_d35m_gazebo.launch
 **amcl 配置文件:** 3amcl_params.yaml
 
 **move_base 配置文件:** 
-carlike/2costmap_common_params_local.yaml
-carlike/2costmap_common_params.yaml
-carlike/2local_costmap_params.yaml
-carlike/2global_costmap_params.yaml
+carlike/2costmap_common_params_local.yaml  
+carlike/2costmap_common_params.yaml  
+carlike/2local_costmap_params.yaml  
+carlike/2global_costmap_params.yaml  
 
-Global Planner: global_planner/GlobalPlanner,  global_planner_params.yaml
-Local Planner: base_local_planner/TrajectoryPlannerROS
-external controller: /fake_cmd 
+Global Planner: global_planner/GlobalPlanner,  global_planner_params.yaml  
+Local Planner: base_local_planner/TrajectoryPlannerROS  
+external controller: /fake_cmd  
 
-1. run roslaunch file & runfile 
+1. run roslaunch file & runfile  
     for sr7e
     ```jsx
     roslaunch gazebo_rl_test sysconbot_rl.launch
@@ -153,18 +153,18 @@ external controller: /fake_cmd
 **amcl 配置文件:** 3amcl_params.yaml
 
 **move_base 配置文件:** 
-sr7c_ls_param/costmap_common_params.yaml
-sr7c_ls_param/costmap_common_params.yaml
-sr7c_ls_param/local_costmap_params.yaml
-sr7c_ls_param/global_costmap_params.yaml
+sr7c_ls_param/costmap_common_params.yaml  
+sr7c_ls_param/costmap_common_params.yaml  
+sr7c_ls_param/local_costmap_params.yaml  
+sr7c_ls_param/global_costmap_params.yaml  
 
-Global Planner: global_planner/GlobalPlanner,  global_planner_params.yaml
-Local Planner: base_local_planner/TrajectoryPlannerROS
+Global Planner: global_planner/GlobalPlanner,  global_planner_params.yaml  
+Local Planner: base_local_planner/TrajectoryPlannerROS  
 external controller: /fake_cmd  
 
-**look a head 配置文件:** lookahead.yaml
+**look a head 配置文件:** lookahead.yaml  
 
-1. run roslaunch file & runfile 
+1. run roslaunch file & runfile  
 
     ```jsx
     roslaunch gazebo_rl_test sysconbot_rl_lookahead_2.launch
