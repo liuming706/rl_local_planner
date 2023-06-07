@@ -38,7 +38,11 @@
 *.idea
 **build**
 **events.out.tfevents**
+
 step_output.log
+epi_output.log
+time_compute_output.log
+time_output.log
 
 # python 
 # Byte-compiled / optimized / DLL files
