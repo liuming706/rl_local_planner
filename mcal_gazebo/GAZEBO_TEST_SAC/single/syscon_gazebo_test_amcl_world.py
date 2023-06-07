@@ -50,7 +50,7 @@ class StageWorld():
         pub_goal_topic = '/move_base_simple/goal'
         self.goal_pub = rospy.Publisher(pub_goal_topic, PoseStamped, queue_size=10)
 
-        self.Goal_data = [[-8.0, 0.0, 0.00], [8.0, 0.0, 3.14]]
+        self.Goal_data = [[-8.0, 0.0, 0.0], [8.0, 0.0, 3.14]]
         self.goal_count = 0
 
         # -----------Publisher and Subscriber-------------
