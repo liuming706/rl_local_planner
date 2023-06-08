@@ -130,3 +130,29 @@
 2023-06-07 17:52:31,436 - INFO - Env: 0, Episode: 1, time :10.525000000, start_time: 185.325000000, end_time: 195.850000000
 2023-06-07 17:57:34,323 - INFO - start_logging
 2023-06-07 17:58:23,527 - INFO - Env: 0, Episode: 1, time :15.869000000, start_time: 108.919000000, end_time: 124.788000000
+2023-06-08 13:59:20,504 - INFO - start_logging
+2023-06-08 14:00:06,772 - INFO - Env: 0, Episode: 1, time :11.312000000, start_time: 135.442000000, end_time: 146.754000000
+2023-06-08 14:00:18,529 - INFO - start_logging
+2023-06-08 14:02:15,649 - INFO - Env: 0, Episode: 1, time :31.620000000, start_time: 156.777000000, end_time: 188.397000000
+2023-06-08 14:12:38,082 - INFO - start_logging
+2023-06-08 14:17:14,203 - INFO - start_logging
+2023-06-08 14:21:47,357 - INFO - start_logging
+2023-06-08 14:23:22,296 - INFO - start_logging
+2023-06-08 14:58:37,473 - INFO - start_logging
+2023-06-08 14:59:47,661 - INFO - Env: 0, Episode: 1, time :18.424000000, start_time: 130.600000000, end_time: 149.24000000
+2023-06-08 15:11:47,394 - INFO - start_logging
+2023-06-08 15:12:57,215 - INFO - Env: 0, Episode: 1, time :17.47000000, start_time: 295.751000000, end_time: 312.798000000
+2023-06-08 15:19:48,497 - INFO - start_logging
+2023-06-08 15:20:53,335 - INFO - Env: 0, Episode: 1, time :18.157000000, start_time: 106.822000000, end_time: 124.979000000
+2023-06-08 15:22:13,180 - INFO - start_logging
+2023-06-08 15:23:13,396 - INFO - Env: 0, Episode: 1, time :17.123000000, start_time: 103.665000000, end_time: 120.788000000
+2023-06-08 15:29:27,404 - INFO - start_logging
+2023-06-08 15:31:17,287 - INFO - Env: 0, Episode: 1, time :33.278000000, start_time: 113.97000000, end_time: 146.375000000
+2023-06-08 15:32:19,228 - INFO - start_logging
+2023-06-08 15:34:01,083 - INFO - Env: 0, Episode: 1, time :32.361000000, start_time: 105.321000000, end_time: 137.682000000
+2023-06-08 15:37:42,118 - INFO - start_logging
+2023-06-08 15:38:28,884 - INFO - Env: 0, Episode: 1, time :11.958000000, start_time: 111.50000000, end_time: 123.8000000
+2023-06-08 15:38:38,890 - INFO - start_logging
+2023-06-08 15:39:27,556 - INFO - Env: 0, Episode: 1, time :13.302000000, start_time: 132.552000000, end_time: 145.854000000
+2023-06-08 15:39:37,505 - INFO - start_logging
+2023-06-08 15:41:22,821 - INFO - Env: 0, Episode: 1, time :32.216000000, start_time: 154.312000000, end_time: 186.528000000
