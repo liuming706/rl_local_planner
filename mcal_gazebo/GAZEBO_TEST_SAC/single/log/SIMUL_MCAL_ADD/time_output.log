@@ -156,3 +156,34 @@
 2023-06-08 15:39:27,556 - INFO - Env: 0, Episode: 1, time :13.302000000, start_time: 132.552000000, end_time: 145.854000000
 2023-06-08 15:39:37,505 - INFO - start_logging
 2023-06-08 15:41:22,821 - INFO - Env: 0, Episode: 1, time :32.216000000, start_time: 154.312000000, end_time: 186.528000000
+2023-06-08 16:38:56,232 - INFO - start_logging
+2023-06-08 16:39:06,327 - INFO - start_logging
+2023-06-08 16:40:43,535 - INFO - Env: 0, Episode: 1, time :28.540000000, start_time: 129.294000000, end_time: 157.834000000
+2023-06-08 16:53:43,360 - INFO - start_logging
+2023-06-08 16:55:20,222 - INFO - Env: 0, Episode: 1, time :28.28000000, start_time: 110.274000000, end_time: 138.302000000
+2023-06-08 17:18:40,037 - INFO - start_logging
+2023-06-08 17:20:25,934 - INFO - Env: 0, Episode: 1, time :26.894000000, start_time: 112.100000000, end_time: 138.994000000
+2023-06-08 17:28:37,436 - INFO - start_logging
+2023-06-08 17:57:18,170 - INFO - start_logging
+2023-06-08 17:58:22,690 - INFO - Env: 0, Episode: 1, time :14.910000000, start_time: 108.288000000, end_time: 123.198000000
+2023-06-08 18:06:31,135 - INFO - start_logging
+2023-06-08 18:07:28,814 - INFO - Env: 0, Episode: 1, time :11.308000000, start_time: 124.656000000, end_time: 135.964000000
+2023-06-08 18:07:58,852 - INFO - start_logging
+2023-06-08 18:09:19,485 - INFO - Env: 0, Episode: 1, time :19.194000000, start_time: 103.639000000, end_time: 122.833000000
+2023-06-08 18:10:59,226 - INFO - start_logging
+2023-06-08 18:11:43,812 - INFO - start_logging
+2023-06-08 18:12:37,870 - INFO - start_logging
+2023-06-08 18:13:52,023 - INFO - Env: 0, Episode: 1, time :18.161000000, start_time: 105.128000000, end_time: 123.289000000
+2023-06-08 18:15:13,835 - INFO - start_logging
+2023-06-08 18:16:29,646 - INFO - Env: 0, Episode: 1, time :17.420000000, start_time: 117.802000000, end_time: 135.222000000
+2023-06-08 18:47:47,753 - INFO - start_logging
+2023-06-08 18:49:11,361 - INFO - Env: 0, Episode: 1, time :16.505000000, start_time: 130.301000000, end_time: 146.806000000
+2023-06-08 21:33:28,059 - INFO - start_logging
+2023-06-08 21:33:42,580 - INFO - start_logging
+2023-06-08 21:35:40,294 - INFO - Env: 0, Episode: 1, time :27.945000000, start_time: 142.73000000, end_time: 170.18000000
+2023-06-08 23:14:57,674 - INFO - start_logging
+2023-06-08 23:16:10,049 - INFO - Env: 0, Episode: 1, time :15.686000000, start_time: 2315.152000000, end_time: 2330.838000000
+2023-06-08 23:17:51,229 - INFO - start_logging
+2023-06-08 23:19:39,640 - INFO - Env: 0, Episode: 1, time :28.111000000, start_time: 2366.836000000, end_time: 2394.947000000
+2023-06-08 23:20:14,267 - INFO - start_logging
+2023-06-08 23:23:09,380 - INFO - Env: 0, Episode: 1, time :30.900000000, start_time: 2407.415000000, end_time: 2438.315000000

@@ -110,7 +110,11 @@ roslaunch sp_gazebo scan_merged_sr7e_rl_df_gazebo.launch
 roslaunch sp_gazebo scan_merged_haina_rl_d35m_gazebo.launch
 
 ```
-
+### 2. Run RL navigation for haina  
+使用 DWA
+```bash  
+roslaunch gazebo_rl_test haina_dwa.launch 
+```
 ### 2. Run RL navigation
 
 ### without Look ahead (mcal)

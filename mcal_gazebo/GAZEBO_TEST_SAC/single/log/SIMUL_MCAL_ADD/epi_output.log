@@ -156,3 +156,34 @@
 2023-06-08 15:39:27,556 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 8036, Reward: -827.54, Distance: 09.57, Result: Crashed
 2023-06-08 15:39:37,504 - INFO - start_logging
 2023-06-08 15:41:22,821 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 21306, Reward: -2111.93, Distance: 00.32, Result: Reach Goal
+2023-06-08 16:38:56,231 - INFO - start_logging
+2023-06-08 16:39:06,326 - INFO - start_logging
+2023-06-08 16:40:43,535 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 18597, Reward: -1845.67, Distance: 00.49, Result: Reach Goal
+2023-06-08 16:53:43,359 - INFO - start_logging
+2023-06-08 16:55:20,222 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 18415, Reward: -1823.18, Distance: 00.46, Result: Reach Goal
+2023-06-08 17:18:40,037 - INFO - start_logging
+2023-06-08 17:20:25,934 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 17358, Reward: -1717.31, Distance: 00.40, Result: Reach Goal
+2023-06-08 17:28:37,436 - INFO - start_logging
+2023-06-08 17:57:18,169 - INFO - start_logging
+2023-06-08 17:58:22,689 - INFO - Env: 0, Goal: (-03.1 , -00.2), Episode: 1, steps: 10360, Reward: -1054.47, Distance: 07.39, Result: Crashed
+2023-06-08 18:06:31,134 - INFO - start_logging
+2023-06-08 18:07:28,814 - INFO - Env: 0, Goal: (000.0 , 000.0), Episode: 1, steps: 8670, Reward: -893.21, Distance: 10.49, Result: Crashed
+2023-06-08 18:07:58,851 - INFO - start_logging
+2023-06-08 18:09:19,485 - INFO - Env: 0, Goal: (000.0 , 000.0), Episode: 1, steps: 13214, Reward: -1338.16, Distance: 06.70, Result: Crashed
+2023-06-08 18:10:59,226 - INFO - start_logging
+2023-06-08 18:11:43,812 - INFO - start_logging
+2023-06-08 18:12:37,870 - INFO - start_logging
+2023-06-08 18:13:52,022 - INFO - Env: 0, Goal: (-03.3 , 000.1), Episode: 1, steps: 12834, Reward: -1321.55, Distance: 07.27, Result: Crashed
+2023-06-08 18:15:13,834 - INFO - start_logging
+2023-06-08 18:16:29,646 - INFO - Env: 0, Goal: (-03.6 , 000.0), Episode: 1, steps: 12075, Reward: -1244.75, Distance: 06.91, Result: Crashed
+2023-06-08 18:47:47,752 - INFO - start_logging
+2023-06-08 18:49:11,361 - INFO - Env: 0, Goal: (-03.4 , -00.2), Episode: 1, steps: 11086, Reward: -1126.45, Distance: 07.14, Result: Crashed
+2023-06-08 21:33:28,058 - INFO - start_logging
+2023-06-08 21:33:42,579 - INFO - start_logging
+2023-06-08 21:35:40,293 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 19805, Reward: -1961.78, Distance: 00.30, Result: Reach Goal
+2023-06-08 23:14:57,673 - INFO - start_logging
+2023-06-08 23:16:10,048 - INFO - Env: 0, Goal: (-03.7 , -00.1), Episode: 1, steps: 9334, Reward: -950.44, Distance: 06.82, Result: Crashed
+2023-06-08 23:17:51,226 - INFO - start_logging
+2023-06-08 23:19:39,639 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 20784, Reward: -2059.99, Distance: 00.44, Result: Reach Goal
+2023-06-08 23:20:14,266 - INFO - start_logging
+2023-06-08 23:23:09,379 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 20351, Reward: -2016.38, Distance: 00.32, Result: Reach Goal
