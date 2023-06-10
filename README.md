@@ -111,9 +111,13 @@ roslaunch sp_gazebo scan_merged_haina_rl_d35m_gazebo.launch
 
 ```
 ### 2. Run RL navigation for haina  
-使用 DWA
+使用 dwa_local_planner
 ```bash  
 roslaunch gazebo_rl_test haina_dwa.launch 
+```
+使用 base_local_planner
+```bash  
+roslaunch gazebo_rl_test haina_base_local.launch 
 ```
 ### 2. Run RL navigation
 
