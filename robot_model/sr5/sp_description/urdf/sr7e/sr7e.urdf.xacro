@@ -10,9 +10,9 @@
   <xacro:property name="height" value="0.20" /> <!-- base link height -->
 
   <!-- Wheels -->
-  <property name="wheel_radius" value="0.076" /> 
-  <property name="wheel_height" value="0.02" />
-  <property name="wheel_mass" value="2.50" /> <!-- in kg-->
+  <xacro:property name="wheel_radius" value="0.076" /> 
+  <xacro:property name="wheel_height" value="0.02" />
+  <xacro:property name="wheel_mass" value="2.50" /> <!-- in kg-->
     
   <link name="base_footprint"/>
 
@@ -27,19 +27,14 @@
       <!--origin xyz="0 0 ${height/2}" rpy="0 0 0"/-->
       <origin xyz="0 0 0.01" rpy="0 0 0"/>
       <geometry>
-	      <!--box size="${width} ${width} ${height}"/-->
-
 	      <box size="0.40 0.40 0.02"/>
-
       </geometry>
     </collision>
     <visual>
       <!--origin xyz="-0.7 0.5 -0.065" rpy="${M_PI/2} 0 0"/-->
       <origin xyz="0 0 0.01" rpy="0 0 0"/>
       <geometry>
-	      <!--box size="0.40 0.40 0.02"/-->
-	      <!--box size="${width} ${width} ${height}"/-->
-        <!--mesh filename="package://sp_gazebo/meshes/AMR.STL" scale="0.001 0.001 0.001"/-->
+	      <box size="0.40 0.40 0.02"/>
       </geometry>
       <material name="white"/>      
     </visual>
@@ -214,18 +209,18 @@
 
   <!-- caster wheel radius and height -->
   <!-- caster wheel mass -->
-  <property name="caster_f_height" value="0.00" /> 
-  <property name="caster_f_radius" value="0.025" /> 
-  <property name="caster_f_mass" value="5.0" /> <!-- in kg-->
+  <xacro:property name="caster_f_height" value="0.00" /> 
+  <xacro:property name="caster_f_radius" value="0.025" /> 
+  <xacro:property name="caster_f_mass" value="5.0" /> <!-- in kg-->
 
 
-  <property name="caster_height" value="-0.029" /> 
+  <xacro:property name="caster_height" value="-0.029" /> 
 
   <!-- caster wheel radius and height -->
   <!-- caster wheel mass -->
-  <property name="caster_b_height" value="0.00" /> 
-  <property name="caster_b_radius" value="0.025" /> 
-  <property name="caster_b_mass" value="5.0" /> <!-- in kg-->
+  <xacro:property name="caster_b_height" value="0.00" /> 
+  <xacro:property name="caster_b_radius" value="0.025" /> 
+  <xacro:property name="caster_b_mass" value="5.0" /> <!-- in kg-->
 
 <!--Caster front  -->
 

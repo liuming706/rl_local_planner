@@ -268,7 +268,7 @@ localization, global planner, costmap, map run
 roslaunch gazebo_rl_test multi-sysconbot_rl_lookahead_2.launch
 
 # 4 agent
-roslaunch gazebo_rl_test multi-sysconbot_rl_lookahead_4.launchy
+roslaunch gazebo_rl_test multi-sysconbot_rl_lookahead_4.launch
 ```
 
 rl based collision avoidance and driving controller run

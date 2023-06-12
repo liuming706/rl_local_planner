@@ -6,8 +6,8 @@ from torch.nn import functional as F
 import numpy as np
 import socket
 from torch.utils.data.sampler import BatchSampler, SubsetRandomSampler
-from net import GaussianPolicy, QNetwork_1, QNetwork_2, DeterministicPolicy
-from utils import soft_update, hard_update
+from . net import GaussianPolicy, QNetwork_1, QNetwork_2, DeterministicPolicy
+from .  utils import soft_update, hard_update
 from torch.optim import Adam
 
 

@@ -6,8 +6,8 @@ from torch.nn import functional as F
 import numpy as np
 import socket
 from torch.utils.data.sampler import BatchSampler, SubsetRandomSampler
-from net import GaussianPolicy, QNetwork_1, QNetwork_2, DeterministicPolicy
-from utils import soft_update, hard_update
+from . net import GaussianPolicy, QNetwork_1, QNetwork_2, DeterministicPolicy
+from . utils import soft_update, hard_update
 from torch.optim import Adam
 
 hostname = socket.gethostname()
@@ -140,7 +140,7 @@ class SAC(object):
         self.automatic_entropy_tuning = args.automatic_entropy_tuning
 
         self.device = torch.device("cuda" if args.cuda else "cpu")
-        self.device = torch.device("cuda")
+        # self.device = torch.device("cuda")
 
         self.action_space_array = np.array(action_space)
         self.action_space = action_space
@@ -185,9 +185,9 @@ class SAC(object):
         goal_list = np.asarray(goal_list)
         vel_list = np.asarray(vel_list)
 
-        frame_list = Variable(torch.from_numpy(frame_list)).float().cuda()
-        goal_list = Variable(torch.from_numpy(goal_list)).float().cuda()
-        vel_list = Variable(torch.from_numpy(vel_list)).float().cuda()
+        frame_list = Variable(torch.from_numpy(frame_list)).float().to(self.device)
+        goal_list = Variable(torch.from_numpy(goal_list)).float().to(self.device)
+        vel_list = Variable(torch.from_numpy(vel_list)).float().to(self.device)
 
         #state = torch.FloatTensor(state).to(self.device).unsqueeze(0)
         if evaluate is False:

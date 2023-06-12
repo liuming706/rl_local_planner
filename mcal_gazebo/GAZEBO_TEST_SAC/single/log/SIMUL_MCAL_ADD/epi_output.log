@@ -187,3 +187,7 @@
 2023-06-08 23:19:39,639 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 20784, Reward: -2059.99, Distance: 00.44, Result: Reach Goal
 2023-06-08 23:20:14,266 - INFO - start_logging
 2023-06-08 23:23:09,379 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 20351, Reward: -2016.38, Distance: 00.32, Result: Reach Goal
+2023-06-10 18:26:53,426 - INFO - start_logging
+2023-06-10 18:28:53,832 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 23434, Reward: -2325.13, Distance: 00.45, Result: Reach Goal
+2023-06-10 18:30:04,391 - INFO - start_logging
+2023-06-10 18:32:02,508 - INFO - Env: 0, Goal: (-08.0 , 000.0), Episode: 1, steps: 18033, Reward: -1785.06, Distance: 00.49, Result: Reach Goal

@@ -21,7 +21,7 @@ from model.net import QNetwork_1, QNetwork_2, ValueNetwork, GaussianPolicy, Dete
 from syscon_gazebo_train_amcl_world import StageWorld
 from model.sac import SAC
 from model.replay_memory import ReplayMemory
-
+MPI_size=0
 parser = argparse.ArgumentParser(description='PyTorch Soft Actor-Critic Args')
 parser.add_argument('--env-name', default="Stage",
                     help='Environment name (default: Stage)')
@@ -74,7 +74,7 @@ def run(comm, env, agent, policy_path, args):
 
     # Training Loop
     test_interval = 10
-    save_interval = 100
+    save_interval = 20
 
     total_numsteps = 0
     updates = 0
@@ -177,7 +177,10 @@ def run(comm, env, agent, policy_path, args):
 
             if env.index == 0:
                 #meomry.list_push(state_list, action, r_list, next_state_list, done_list)
-                for i in range(np.asarray(state_list).shape[0]):
+                #for element in state_list:
+                #	print(element)
+                # for i in range(np.asarray(state_list).shape[0]):
+                for i in range(1):
                     memory.push(state_list[i][0], state_list[i][1], state_list[i][2], action[i], r_list[i], next_state_list[i][0], next_state_list[i][1], next_state_list[i][2], done_list[i]) # Append transition to memory
 
             state = next_state  
@@ -210,9 +213,9 @@ def run(comm, env, agent, policy_path, args):
 
 if __name__ == '__main__':
     comm = MPI.COMM_WORLD # There is one special communicator that exists when an MPI program starts, that contains all the processes in the MPI program. This communicator is called MPI.COMM_WORLD
-    size = comm.Get_size() # The first of these is called Get_size(), and this returns the total number of processes contained in the communicator (the size of the communicator).
+    MPI_size = comm.Get_size() # The first of these is called Get_size(), and this returns the total number of processes contained in the communicator (the size of the communicator).
     rank = comm.Get_rank() # The second of these is called Get_rank(), and this returns the rank of the calling process within the communicator. Note that Get_rank() will return a different value for every process in the MPI program.
-    print("MPI size=%d, rank=%d" % (size, rank))
+    print("MPI size=%d, rank=%d" % (MPI_size, rank))
 
     # Environment
     env = StageWorld(beam_num=args.laser_beam, index=rank, num_env=args.num_env)
